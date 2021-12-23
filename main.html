@@ -6,7 +6,7 @@
     <style>
       #grid{
         display:grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 0.8fr 2.2fr;
       }
       .myinfo{
         border:1px solid gray;
@@ -16,23 +16,43 @@
       .myinfo .face{
         border-bottom:2px solid gray;
       }
-      .center{
+      .small-center{
         display: block;
         margin-left: auto;
         margin-right: auto;
         width:30%;
       }
-      .detail{
-        border:2px solid gray;
-        margin:2px;
+      .center{
+        display: block;
+        margin-top: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+        width:30px;
       }
-      h2{
+
+      .background{
+        border-bottom: 2px solid gray;
+      }
+      h1{
         text-align: center;
         margin-bottom:0;
+        font-size: 25px;
       }
       h5{
         text-align: center;
         margin-top:0;
+      }
+      h3{
+        border-bottom: 2px solid gray;
+      }
+      .detail{
+        border:2px solid gray;
+        margin:2px;
+        padding:20px;
+      }
+      .detail-content{
+        display:grid;
+        grid-template-columns: 0.3fr 3fr;
       }
     </style>
   </head>
@@ -40,8 +60,8 @@
     <div id="grid">
       <div class="myinfo">
         <div class="face">
-          <img src="yeongbin.jpg"class="center">
-          <h2>Yeongbin Hwang</h2>
+          <img src="yeongbin.jpg" class="small-center">
+          <h1>Yeongbin Hwang</h1>
           <h5>Master Student</h5>
         </div>
         <div class="address">
@@ -53,8 +73,88 @@
         </div>
       </div>
       <div class="detail">
-        <p>Background
-        </p>
+        <div class="background">
+          <h2>BACKGROUND</h2>
+        </div>
+        <div class="background-content">
+          <div id="bio" class="detail-content">
+            <div class="image">
+              <img src="bio.jpg" class="center">
+            </div>
+            <div class="content">
+              <h3>BIO</h3>
+              <div class="detail">
+                My name is Yeongbin Hwang.
+              </div>
+            </div>
+          </div>
+          <div id="research" class="detail-content">
+            <div class="image">
+              <img src="interest.png" class="center">
+            </div>
+            <div class="content">
+              <h3>RESEARCH</h3>
+              <div class="detail">
+                cellular network
+              </div>
+            </div>
+          </div>
+          <div id="education" class="detail-content">
+            <div class="image">
+              <img src="education.png" class="center">
+            </div>
+            <div class="content">
+              <h3>EDUCATION</h3>
+              <div class="detail">
+                graduate at KAIST
+              </div>
+            </div>
+          </div>
+          <div id="work" class="detail-content">
+            <div class="image">
+              <img src="work.png" class="center">
+            </div>
+            <div class="content">
+              <h3>WORK EXPERIENCE</h3>
+              <div class="detail">
+                individual research in network lab.
+              </div>
+            </div>
+          </div>
+          <div id="award" class="detail-content">
+            <div class="image">
+              <img src="award.png" class="center">
+            </div>
+            <div class="content">
+              <h3>AWARD</h3>
+              <div class="detail">
+                no award
+              </div>
+            </div>
+          </div>
+          <div id="publication" class="detail-content">
+            <div class="image">
+              <img src="publication.png" class="center">
+            </div>
+            <div class="content">
+              <h3>PUBLICATION</h3>
+              <div class="detail">
+                publication
+              </div>
+            </div>
+          </div>
+          <div id="reference" class="detail-content">
+            <div class="image">
+              <img src="reference.png" class="center">
+            </div>
+            <div class="content">
+              <h3>REFERENCE</h3>
+              <div class="detail">
+                reference
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
